@@ -2,8 +2,8 @@ from sentence_transformers import SentenceTransformer
 import pinecone
 import openai
 import streamlit as st
-openai.api_key = ""
-model = SentenceTransformer('all-MiniLM-L6-v2')
+openai.api_key = "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"
+model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 
 pinecone.init(api_key='23cdf23d-2596-45ef-9870-16bf2f1b370e', environment='gcp-starter')
 index = pinecone.Index('langchain-chatbot')
